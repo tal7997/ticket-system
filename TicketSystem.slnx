@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/server/">
+    <Project Path="server/TicketSystem.Api/TicketSystem.Api.csproj" />
+  </Folder>
+</Solution>
