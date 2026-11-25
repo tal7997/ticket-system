@@ -7,7 +7,7 @@
         public string Description { get; set; } = "";
         public TicketUrgency Urgency { get; set; } = TicketUrgency.Medium;
         public TicketStatus Status { get; set; } = TicketStatus.Open;
-        public DateTime CreateAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     }
 }
