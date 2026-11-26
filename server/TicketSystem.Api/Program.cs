@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TicketSystem.Api.Data;
+using TicketSystem.Api.Models;
+using TicketSystem.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Default")));
 
+builder.Services.AddScoped<ITicketService, TicketService>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
